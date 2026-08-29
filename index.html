@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoubleZir00—Where Fashion and Style Make Harmony</title>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <header class="site-header">
         <nav class="navbar">
-            <!-- Sidebar Toggle Button -->
-            <button class="sidebar-toggle" type="button" aria-label="Open navigation menu">☰</button>
             <!-- Brand Name -->
-            <a href="/" class="brand">DoubleZir00</a>
+            <a href="index.html" class="brand">DoubleZir00</a>
             <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#new-Arrivals">New Arrivals</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#brand">Brand</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="shop-menu">
+                    <a href="shop.html">Shop<i class="fa-solid fa-chevron-down"></i></a>
+                    <!--Shop Dropdown Menu-->
+                    <ul class="shop-dropdown">
+                        <li><a href="shop.html#men">Men</a></li>
+                        <li><a href="shop.html#women">Women</a></li>
+                        <li><a href="shop.html#kids">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="brand.html">Brand</a></li>
             </ul>
             <!-- Navigation Icons -->
             <div class="nav-icons">
                 <!-- Search -->
                 <button type="button" class="nav-icons" aria-label="Search">
-                    🔍
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <!-- Profile -->
                 <a href="/profile" class="nav-icons" aria-label="Profile">
-                    👤
+                    <i class="fa-regular fa-user"></i>
                 </a>
                 <!--Wishlist-->
                 <a href="/wishlist" class="nav-icons" aria-label="Wishlist">
-                    ❤️
+                    <i class="fa-regular fa-heart"></i>
                 </a>
                 <!-- Cart -->
                 <a href="/cart" class="nav-icons" aria-label="Cart">
-                    🛒
+                    <i class="fa-solid fa-bag-shopping"></i>
                 </a>
             </div>
     </nav>
-</header>
+    </header>
 </body>
