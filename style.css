@@ -77,6 +77,11 @@ Navigation Bar Links
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.siteheader:hover .nav-links li {
+    color: #111;
 }
 
 .nav-links a:hover {
@@ -85,7 +90,7 @@ Navigation Bar Links
 
 .navbar a{
     text-decoration: none;
-    color: #111;
+    color: inherit;
 }
 
 /* =========================
@@ -212,6 +217,34 @@ Hero Section
     color: #fff;
 }
 
+.hero{
+    position: relative;   /*added, so that the arrow can anchor to the hero section*/
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    animation: scroll-bounce 2s infinite;
+}
+
+.scroll-down:hover {
+    opacity: 0.7;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
+}
+
 .hero-content h1 {
     font-size: 56px;
     font-weight: 700;
@@ -228,10 +261,16 @@ Hero Section
     letter-spacing: 0.3px;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
 .hero-button {
     display: inline-block;
     padding: 18px 38px;
-    background-color: #000000;
+    background-color: transparent;
+    border: 2px solid #fff;
     border-radius: 4px;
     color: #fff;
     font-size: 15px;
