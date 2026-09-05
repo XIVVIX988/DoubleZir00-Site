@@ -286,3 +286,96 @@ Hero Section
     color: #000000;
     border: 2px solid #000000;
 }
+
+.the-idea {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 40px;
+    background-color: #f7f4ef;
+}
+
+.idea-infinity {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    font-size: 44rem;
+    line-height: 1;
+    color:#000000;
+    opacity: 0.04;
+    font-weight: 700;
+    pointer-events: none;
+    user-select: none;
+}
+
+.idea-content {
+    position: relative;
+    max-width: 620px;
+    color: #111111;
+}
+
+.idea-content h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+}
+
+.idea-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 22px;
+    max-width: 480px;
+}
+
+.idea-cta {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 22px;
+    max-width: 480px;
+}
+
+.idea-cta {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px solid #111111;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.idea-cta:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+    . {
+        padding: 70px 24px;
+        min-height: unset;
+    }
+
+    .idea-infinity {
+        font-size: 20rem;
+        right: 4%;
+        transform: translate(50%, -50%);
+    }
+
+    .idea-content h2 {
+        font-size: 32px;
+    }
+}
